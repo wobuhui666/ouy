@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yeee</title>
+    <style>
+        /* 定义基本样式 */
+        body {
+            font-family: Arial, sans-serif;
+        }
 
+        /* 定义图片容器的样式 */
+     .image-container {
+            max-width: 100%;
+            margin: 0 auto;
+        }
+
+        /* 定义图片的样式 */
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* 定义提示框的样式 */
+     .alert {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f8f9fa;
+            color: #333;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+        }
+
+        /* 花瓣样式 */
+     .petal {
+            width: 10px;
+            height: 10px;
+            background-color: pink;
+            position: fixed;
+            animation: petal-fall 3s infinite;
+        }
+
+        @keyframes petal-fall {
+            0% {
+                opacity: 1;
+                top: -10px;
+            }
+            100% {
+                opacity: 0;
+                top: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="1.gif" alt="图片描述">
+    </div>
+
+    <script>
+        // JavaScript 代码用于在访问时弹出"ouy"提示框
+        window.onload = function() {
+            alert("ouy");
+        };
+    </script>
+</body>
+</html>
